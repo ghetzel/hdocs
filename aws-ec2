@@ -1,0 +1,57 @@
+aws-ec2: Amazon Web Services EC2 instance types
+
+ID           Name                                             Architecture  RAM      Disk         Cores
+c1.medium    High-CPU Medium                                  32-bit        1740.8   350 GB       5
+c1.xlarge    High-CPU Extra Large                             64-bit        7168     1690 GB      20
+c3.2xlarge   C3 Double Extra Large                            64-bit        15360    160 GB       8
+c3.4xlarge   C3 Quadruple Extra Large                         64-bit        30720    320 GB       16
+c3.8xlarge   C3 Eight Extra Large                             64-bit        61440    640 GB       16
+c3.large     C3 Large                                         64-bit        3750     32 GB        2
+c3.xlarge    C3 Extra Large                                   64-bit        7168     80 GB        4
+c4.2xlarge   C4 Double Extra Large                            64-bit        15360    0 GB         8
+c4.4xlarge   C4 Quadruple Extra Large                         64-bit        30720    0 GB         16
+c4.8xlarge   C4 Eight Extra Large                             64-bit        61440    0 GB         36
+c4.large     C4 Large                                         64-bit        3750     0 GB         2
+c4.xlarge    C4 Extra Large                                   64-bit        7168     0 GB         4
+cc1.4xlarge  Cluster Compute Quadruple Extra Large            64-bit        23552    1690 GB      33.5
+cc2.8xlarge  Cluster Compute Eight Extra Large                64-bit        61952    3370 GB      88
+cg1.4xlarge  Cluster GPU Quadruple Extra Large                64-bit        22528    1690 GB      33.5
+cr1.8xlarge  High Memory Eight Extra Large                    64-bit        249856   240 GB       88
+d2.2xlarge   D2 Double Extra Large                            64-bit        62464    12000 GB     8
+d2.4xlarge   D2 Quadruple Extra Large                         64-bit        124928   24000 GB     16
+d2.8xlarge   D2 Eight Extra Large                             64-bit        249856   48000 GB     36
+d2.xlarge    D2 Extra Large                                   64-bit        31232    6000 GB      4
+g2.2xlarge   GPU Double Extra Large                           64-bit        15360    60 GB        8
+g2.8xlarge   GPU Eight Extra Large                            64-bit        61440    240 GB       32
+hi1.4xlarge  High I/O Quadruple Extra Large Instance          64-bit        61952    2048 GB      35
+hs1.8xlarge  High Storage Eight Extra Large                   64-bit        119808   50331648 GB  35
+i2.2xlarge   I2 Double Extra Large                            64-bit        62464    1600 GB      8
+i2.4xlarge   I2 Quadruple Extra Large                         64-bit        124928   3200 GB      16
+i2.8xlarge   I2 Eight Extra Large                             64-bit        249856   6400 GB      32
+i2.xlarge    I2 Extra Large                                   64-bit        31232    800 GB       4
+m1.large     Large Instance                                   64-bit        7680     850 GB       4
+m1.medium    Medium Instance                                  32-bit        3750     400 GB       2
+m1.small     Small Instance                                   32-bit        1740.8   160 GB       1
+m1.xlarge    Extra Large Instance                             64-bit        15360    1690 GB      8
+m2.2xlarge   High Memory Double Extra Large                   64-bit        35020.8  850 GB       13
+m2.4xlarge   High Memory Quadruple Extra Large                64-bit        70041.6  1690 GB      26
+m2.xlarge    High-Memory Extra Large                          64-bit        17510.4  420 GB       6.5
+m3.2xlarge   M3 Double Extra Large                            64-bit        30720    160 GB       8
+m3.large     M3 Large                                         64-bit        7680     32 GB        2
+m3.medium    M3 Medium                                        64-bit        3840     4 GB         1
+m3.xlarge    M3 Extra Large                                   64-bit        15360    80 GB        4
+m4.10xlarge  M4 Ten Extra Large                               64-bit        163840   0 GB         40
+m4.2xlarge   M4 Double Extra Large                            64-bit        31232    0 GB         8
+m4.4xlarge   M4 Quadruple Extra Large                         64-bit        62464    0 GB         16
+m4.large     M4 Large                                         64-bit        8192     0 GB         2
+m4.xlarge    M4 Extra Large                                   64-bit        16384    0 GB         4
+r3.2xlarge   R3 Double Extra Large                            64-bit        62464    160 GB       8
+r3.4xlarge   R3 Quadruple Extra Large                         64-bit        124928   320 GB       16
+r3.8xlarge   R3 Eight Extra Large                             64-bit        249856   640 GB       32
+r3.large     R3 Large                                         64-bit        15616    32 GB        2
+r3.xlarge    R3 Extra Large                                   64-bit        31232    80 GB        4
+t1.micro     Micro Instance                                   0-bit         613      0 GB         2
+t2.large     Micro Instance                                   64-bit        8192     0 GB         2
+t2.medium    Micro Instance                                   64-bit        4096     0 GB         2
+t2.micro     Micro Instance                                   64-bit        1024     0 GB         1
+t2.small     Micro Instance                                   64-bit        2048     0 GB         1

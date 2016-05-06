@@ -1,0 +1,13 @@
+term: working with terminals
+
+Escape Sequences
+
+echo -e "This text is \e[0;31m[0;31mRED[0m\e[0m"
+echo -e "This text is \e[0;32m[0;32mGREEN[0m\e[0m"
+echo -e "This text is \e[0;33m[0;33mBROWN[0m\e[0m"
+echo -e "This text is \e[0;34m[0;34mBLUE[0m\e[0m"
+echo -e "This text is \e[0;35m[0;35mPURPLE[0m\e[0m"
+echo -e "This text is \e[0;36m[0;36mCYAN[0m\e[0m"
+echo -e "This text is \e[0;37m[0;37mLT GREY[0m\e[0m"
+
+BASH Options

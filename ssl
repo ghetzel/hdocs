@@ -1,0 +1,49 @@
+ssl: Generic OpenSSL Helper Commands
+
+# PK ---------------------------------------------------------
+# Generate a Private Key (4096 bits)
+openssl genrsa -out ca.key 4096
+
+# ...with passphrase
+openssl genrsa -des3 -out ca.key 4096
+
+
+
+# CSR ---------------------------------------------------------
+# Generate Certificate Signing Request (with existing key)
+openssl req -new -key ca.key -nodes -out ca.csr -subj '/C=US/ST=NY/L=New York/O=Your Org/OU=Your Group/CN=fqdn.example.com'
+
+# ...without existing key (generate new one)
+openssl req -new -newkey rsa:4096 -nodes -keyout ca.key -out ca.csr -subj '/C=US/ST=NY/L=New York/O=Your Org/OU=Your Group/CN=fqdn.example.com'
+
+
+
+# SIGN ---------------------------------------------------------
+# Generate self-signed certificate
+openssl x509 -req -days 365 -in ca.csr -signkey ca.key -out ca.crt
+
+# Sign with an upstream CA (needs CA cert and key)
+openssl x509 -req -days 365 -in client.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out client.crt
+
+
+# ---------------------------------------------------------
+# Check / Print Commands
+# Check a Certificate Signing Request (CSR)
+openssl req -text -noout -verify -in ca.csr
+
+# Check a private key
+openssl rsa -in ca.key -check
+
+# Check a certificate
+openssl x509 -in ca.crt -text -noout
+
+# Check a PKCS#12 file (.pfx or .p12)
+openssl pkcs12 -info -in ca.p12
+
+
+# GET ----------------------------------------------------------
+# download an SSL certificate from a remote host
+openssl s_client -showcerts -connect example.com:443 </dev/null
+
+# verify remote cert connectivity
+openssl s_client -connect <host>:<port> -key <private_key> -CAfile <CA cert> -state
